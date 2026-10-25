@@ -1,0 +1,6 @@
+{
+  "name": "release-checklist-api", "version": "1.0.0", "type": "module",
+  "scripts": {"dev":"node --watch src/index.js", "start":"node src/index.js", "test":"node --test", "stress":"node src/stress.js"},
+  "dependencies": {"@apollo/server":"^4.11.3", "@as-integrations/express5":"^1.1.1", "cors":"^2.8.5", "dotenv":"^16.4.7", "express":"^5.1.0", "graphql":"^16.10.0", "pg":"^8.13.1"},
+  "devDependencies": {"autocannon":"^8.0.0"}
+}

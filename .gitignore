@@ -1,0 +1,12 @@
+node_modules
+**/node_modules
+client/dist
+.env
+coverage
+.DS_Store
+dist/
+**/dist/
+.env.*
+!.env.example
+.vercel/
+coverage/

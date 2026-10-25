@@ -1,0 +1,8 @@
+{
+  "name": "release-checklist-tool",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": ["client", "server"],
+  "scripts": {"dev": "concurrently -k -n API,WEB -c blue,green \"npm:dev:server\" \"npm:dev:client\"", "dev:server": "npm --workspace server run dev", "dev:client": "npm --workspace client run dev", "build": "npm --workspace client run build", "test": "npm --workspace server test", "stress": "npm --workspace server run stress"},
+  "devDependencies": {"concurrently": "^9.1.2"}
+}
